@@ -128,6 +128,12 @@ body{
     min-width: 350px;
     font-size: 1.0rem;
     text-align: left;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-text a:hover {
+    background-color: white;
+    color: black;
 }
 
 .title {
@@ -307,6 +313,7 @@ body{
 
 .text .esquerda h2{
     margin-top: 0;
+    color: 000;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -359,7 +366,7 @@ body{
 }
 
 .footer {
-
+    width: 100%;
     background-color: #333;
     padding: 5em 0 1em 0;
     color: #ffffff;
@@ -397,11 +404,33 @@ body{
     text-decoration: none;
     color: white;
 }
-.container-clearfix {
-    margin: 0 auto;
-    max-width: 940px;
+
+
+#page-footer .container {
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
+.pagina-rodape{
+    float: none;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #333333;
+}
+
+.container-clearfix {
+    margin: 0 auto;
+    background-color: #333333;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container-clearfix a{
+    margin-left: 60px;
+    text-decoration: none;
+    color: #e7e7e7;
+}
 
 @media (max-width: 1260px){
     .topbar-content {
@@ -411,6 +440,11 @@ body{
     .title{
         font-size: 2.3em;
     }
+    
+    .slide-caption{
+        font-size: 0.5em;
+    }
+
 }
 
 @media (max-width: 980px){
